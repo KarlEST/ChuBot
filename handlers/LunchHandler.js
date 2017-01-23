@@ -9,11 +9,11 @@ import htmlToText from 'html-to-text';
 export default class LunchHandler extends BaseHandler {
 
 	getDescription() {
-		return 'lunch: displays today\'s lunch menus';
+		return 'Lunch: displays today\'s lunch menus';
 	}
 
 	getHelp() {
-		return '*lunch* fetches menus for supported venues.';
+		return '*Lunch* fetches menus for supported venues.';
 	}
 
 	match(message) {

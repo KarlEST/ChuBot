@@ -1,9 +1,18 @@
-# SlackBot
-*Easily extendable node.js based slack bot.*
+# ChuBot
+*Bot made for everyday use with friends in Slack group chat.*
 
-## Features
-- Create a simple class to add a new message handler.
-- Simply call message.respond(message) to respond to messages.
+Bot is based on [SlackBot](https://github.com/kallaspriit/slackbot) by Priit Kallas.
+
+## What bot can do:
+- Help: prints commands help information
+- Calculator: can evaluate mathematical expressions such as "(1+5)/2"
+- Lunch: displays today's lunch menus
+
+## Ideas for bot:
+- Lmgtfy: Generates *Let me google that for you* url
+- ++: Give and track positive things your friends do in Slack
+- Weather: Get location and time based weather predictions
+- Statistics: Get daily statistics about talking in chat
 
 ## Configuring
 - copy `_config.js` to `config.js` and replace with your own info

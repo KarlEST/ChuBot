@@ -3,11 +3,11 @@ import BaseHandler from '../src/BaseHandler';
 export default class CalculatorHandler extends BaseHandler {
 
 	getDescription() {
-		return 'calculator: can evaluate mathematical expressions such as "(1+5)/2"';
+		return 'Calculator: can evaluate mathematical expressions such as "(1+5)/2"';
 	}
 
 	getHelp() {
-		return '*calculator* uses javascript eval() to evaluate numeric match expressions.';
+		return '*Calculator* uses javascript eval() to evaluate numeric match expressions.';
 	}
 
 	match(message) {

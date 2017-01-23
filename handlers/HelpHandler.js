@@ -5,7 +5,7 @@ export default class HelpHandler extends BaseHandler {
 	static regexp = /^help( (\w+))?$/i;
 
 	getDescription() {
-		return 'help: prints commands help information';
+		return 'Help: prints commands help information';
 	}
 
 	match(message) {
@@ -33,8 +33,6 @@ export default class HelpHandler extends BaseHandler {
 				const name1 = handlerInfo.instance.getDescription().substr(0, commandName.length).toLowerCase();
 				const name2 = commandName.toLowerCase();
 
-				console.log('compare', name1, name2);
-
 				return name1 === name2;
 			}) || null;
 		} else {
@@ -44,7 +42,7 @@ export default class HelpHandler extends BaseHandler {
 		}
 
 		if (!handler) {
-			message.respond('command "' + commandName + '" not found');
+			message.respond('Command "' + commandName + '" not found!');
 
 			return;
 		}
@@ -53,7 +51,7 @@ export default class HelpHandler extends BaseHandler {
 	}
 
 	handleGeneralHelp(message) {
-		let response = '*Supported handlers*';
+		let response = '*Supported handlers:*';
 
 		this.bot.handlers.forEach((handler, index) => {
 			response += '\n' + (index + 1) + '. ' + handler.instance.getDescription();

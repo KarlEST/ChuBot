@@ -1,13 +1,13 @@
 {
-  "name": "slackbot",
-  "version": "1.0.0",
-  "description": "",
+  "name": "ChuBot",
+  "version": "1.1.0",
+  "description": "Bot made for everyday use with friends in Slack group chat.",
   "main": "index.js",
   "scripts": {
     "bot": "babel-node bot",
     "lint": "eslint ."
   },
-  "author": "Priit Kallas <kallaspriit@gmail.com> (http://stagnationlab.com/)",
+  "author": "Karl Lääts <karl.l22ts@hotmail.com>",
   "license": "ISC",
   "dependencies": {
     "bluebird": "^3.3.4",
