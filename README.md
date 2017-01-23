@@ -7,12 +7,14 @@ Bot is based on [SlackBot](https://github.com/kallaspriit/slackbot) by Priit Kal
 - Help: prints commands help information
 - Calculator: can evaluate mathematical expressions such as "(1+5)/2"
 - Lunch: displays today's lunch menus
+- Insane: everything and anything is insane
 
 ## Ideas for bot:
 - Lmgtfy: Generates *Let me google that for you* url
 - ++: Give and track positive things your friends do in Slack
 - Weather: Get location and time based weather predictions
 - Statistics: Get daily statistics about talking in chat
+- Gambling: Gamble with your ++ points
 
 ## Configuring
 - copy `_config.js` to `config.js` and replace with your own info
@@ -42,4 +44,4 @@ Bot is based on [SlackBot](https://github.com/kallaspriit/slackbot) by Priit Kal
 ## Docs
 - [Bot users](https://api.slack.com/bot-users)
 - [Slack Real Time Messaging API](https://api.slack.com/rtm)
-- [Message event](hhttps://api.slack.com/events/message)
+- [Message event](https://api.slack.com/events/message)
