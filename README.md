@@ -8,9 +8,9 @@ Bot is based on [SlackBot](https://github.com/kallaspriit/slackbot) by Priit Kal
 - Calculator: can evaluate mathematical expressions such as "(1+5)/2"
 - Lunch: displays today's lunch menus
 - Insane: everything and anything is insane
+- Lmgtfy: Generates *Let me google that for you* url
 
 ## Ideas for bot:
-- Lmgtfy: Generates *Let me google that for you* url
 - ++: Give and track positive things your friends do in Slack
 - Weather: Get location and time based weather predictions
 - Statistics: Get daily statistics about talking in chat

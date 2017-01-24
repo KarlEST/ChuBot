@@ -3,7 +3,7 @@ import BaseHandler from '../src/BaseHandler';
 export default class InsaneHandler extends BaseHandler {
 
 	getDescription() {
-		return 'Insane: everything and anything is insane';
+		return 'Insane: everything and anything is insane. Reddit easter egg';
 	}
 
 	getHelp() {
