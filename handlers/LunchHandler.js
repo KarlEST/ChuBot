@@ -20,16 +20,7 @@ export default class LunchHandler extends BaseHandler {
 		const regexpList = [
 			/^lunch$/i,
 			/mis .*lõunaks/i,
-			/mis .*söögiks/i,
-			/mis .*sööme/i,
-			/mida .*sööme/i,
-			/kuhu .*sööma/i,
-			/kuhu .*lõunale/i,
-			/lähme .*sööma/i,
-			/lähme .*lõunale/i,
-			/sööma\?/i,
-			/lõunale\?/i,
-			/nälg/i
+			/mis .*söögiks/i
 		];
 
 		return regexpList.find((regexp) => regexp.test(message.text)) ? true : false;
