@@ -1,1 +1,1 @@
-web: babel-node bot
+web: npm run bot
