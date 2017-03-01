@@ -40,7 +40,7 @@ export default class Bot extends SlackBot {
 			text: 'help',
 			respond: (response) => {
 				this.postMessageToGroup('test', response, {
-					icon_url: this.config.picture // eslint-disable-line camelcase
+					icon_url: process.env.picture || this.config.picture // eslint-disable-line camelcase
 				});
 			}
 		});
@@ -51,12 +51,12 @@ export default class Bot extends SlackBot {
 
 		info.respond = (text, options = {}) => {
 			this.postMessage(info.channel, text, {
-				icon_url: this.config.picture,  // eslint-disable-line camelcase
+				icon_url: process.env.picture || this.config.picture,  // eslint-disable-line camelcase
 				...options
 			});
 		};
 
-		if (info.type === 'message' && info.username !== this.config.name) {
+		if (info.type === 'message' && info.username !== (process.env.name || this.config.name)) {
 			this.handleMessage(info);
 		}
 	}

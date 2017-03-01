@@ -193,8 +193,8 @@ export default class LunchHandler extends BaseHandler {
 
 	getFacebookMenu(userId, postMatcherFn, menuExtracterFn) {
 		const facebook = new Facebook(
-			this.bot.config.facebook.id,
-			this.bot.config.facebook.secret
+			process.env.facebookId || this.bot.config.facebook.id,
+			process.env.facebookSecret || this.bot.config.facebook.secret
 		);
 
 		return facebook.getFeed(userId)
