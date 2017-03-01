@@ -7,6 +7,9 @@
     "bot": "babel-node bot",
     "lint": "eslint ."
   },
+  "engines": {
+    "node": "5.9.0"
+  },
   "author": "Karl Lääts <karl.l22ts@hotmail.com>",
   "license": "ISC",
   "dependencies": {
