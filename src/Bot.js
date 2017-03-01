@@ -5,6 +5,9 @@ import glob from 'glob';
 export default class Bot extends SlackBot {
 
 	constructor(config) {
+		if (process.env.token) {
+			config.token = process.env.token;
+		}
 		super(config);
 
 		this.config = config;
