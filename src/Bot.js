@@ -7,6 +7,8 @@ export default class Bot extends SlackBot {
 	constructor(config) {
 		if (process.env.token) {
 			config.token = process.env.token;
+			config.name = process.env.name;
+			config.picture = process.env.picture;
 		}
 		console.log('Config: ', config);
 		super(config);
