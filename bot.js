@@ -1,5 +1,12 @@
 import Bot from './src/Bot';
-import config from './config';
+// import config from './config';
 
 // run the bot
-Bot.run(config);
+let conf = {
+	default: {}
+};
+
+if (!process.env.token) { // workaround for heroku
+	conf = require('./config');
+}
+Bot.run(conf.default);

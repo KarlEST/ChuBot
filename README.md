@@ -7,7 +7,6 @@ Bot is based on [SlackBot](https://github.com/kallaspriit/slackbot) by Priit Kal
 - Help: prints commands help information
 - Calculator: can evaluate mathematical expressions such as "(1+5)/2"
 - Lunch: displays today's lunch menus
-- Insane: everything and anything is insane
 - Lmgtfy: Generates *Let me google that for you* url
 
 ## Ideas for bot:
