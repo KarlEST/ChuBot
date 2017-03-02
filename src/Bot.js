@@ -10,7 +10,7 @@ export default class Bot extends SlackBot {
 			config.name = process.env.name;
 			config.picture = process.env.picture;
 		}
-		console.log('Config: ', config);
+
 		super(config);
 
 		this.config = config;
