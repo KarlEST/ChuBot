@@ -50,7 +50,8 @@ export default class Facebook {
 						return;
 					}
 
-					resolve(body.split('=')[1]);
+					const accessToken = JSON.parse(body).access_token;
+					resolve(accessToken);
 				}
 			);
 		});
