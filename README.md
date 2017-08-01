@@ -44,3 +44,5 @@ Bot is based on [SlackBot](https://github.com/kallaspriit/slackbot) by Priit Kal
 - [Bot users](https://api.slack.com/bot-users)
 - [Slack Real Time Messaging API](https://api.slack.com/rtm)
 - [Message event](https://api.slack.com/events/message)
+
+Test git commit from work
